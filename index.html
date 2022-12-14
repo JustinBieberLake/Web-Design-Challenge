@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
 </head>
+
 <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand navbar-custom" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots</a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Max Temperature</a>
+              <a class="dropdown-item" href="#">Humidity</a>
+              <a class="dropdown-item" href="#">Cloudiness</a>
+              <a class="dropdown-item" href="#">Wind Speed</a>
+            </div>
+          </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-custom" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-custom" href="data.html">Data</a>
+                </li>                   
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+          <!-- Start of Visualizations imageNav Area -->
+          <div class="row">
+      
+            <div class="col-md-1"></div>
+    
+            <div class="col-md-7 content">
+                
+                <h1>Summary: Latitude vs. Various Climate Factors</h1>
+                <hr>
+                <article>
+                    <img src="LatvsWindSpeed.png" alt="Tempurature Map" class="big_img" width=50% style="float: left">
+                    <br>
+                    <p></p>
+                    <p></p>
+                </article>
+            </div>
+
+            <div class="col-md-3 content">
+                <h1>Visualizations</h1>
+                <article>
+                <hr>
+                    <a href="temp.html">
+                        <img src="LatvsWindSpeed.png" alt="Tempurature Graph" class="small_img">
+                    </a>
+                    <a href="humidity.html">
+                        <img src="LatvsHumidity.png" alt="Humidity Graph" class="small_img">
+                    </a>
+                    <a href="cloudiness.html">
+                        <img src="LatvsCloudiness.png" alt="Cloudiness Graph" class="small_img">
+                    </a>
+                    <a href="wind.html">
+                        <img src="LatvsWindSpeed.png" alt="WindSpeed Graph" class="small_img">
+                    </a>
+                </article>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+          <!-- End of the Visualizations imageNav Area -->
+    <!-- End of container -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
