@@ -25,9 +25,9 @@
 
   <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Latitude vs Weather</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,7 +36,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plots</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="visualizations/temp.html">Temperature</a>
                 <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
                 <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
                 <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
@@ -54,6 +54,47 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-10">
+          <br><div class="jumbotron">
+            <h1 class="display-">Comparison: Latitude vs Weather</h1>
+
+            <br
+            
+            <h5>Click pictures for more information</h5>
+          </div>
+        </div>
+       
+        <!-- Start of Visualizations imageNav Area -->
+        <br>
+        
+        <div class="col-md-2">
+          <br><a href="visualizations/temp.html">
+            <h6> vs. Temperature </h6>
+            <button type="button" class="btn btn-default">
+              <img src="assets/images/Temperature.png" width="250%" />
+            </button></a>
+          <a href="visualizations/humidity.html">
+            <h6> vs. Humidity</h6>
+            <button class="btn btn-default">
+              <img src="assets/images/Humidity.png" width="250%" />
+            </button></a>
+          <a href="visualizations/cloudiness.html">
+            <h6> vs. Cloudiness </h6>
+            <button class="btn btn-default">
+              <img src="assets/images/Cloudiness.png" width="250%" />
+            </button>
+          <a href="visualizations/wind.html">
+            <h6> vs. Wind Speed </h6>
+            <button class="btn btn-default">
+              <img src="assets/images/Windspeed.png" width="250%" />
+            </button>
+        </div>
+        <!-- End of the Visualizations imageNav Area -->
+      </div>
+    </div>
     <!-- End of container -->
 
     <!-- jQuery CDN -->

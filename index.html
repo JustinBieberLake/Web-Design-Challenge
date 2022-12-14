@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
 
+    
+
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -20,7 +22,7 @@
 
 <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container">
           <a class="navbar-brand" href="index.html">Latitude</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,45 +53,49 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-          <!-- Start of Visualizations imageNav Area -->
-          <div class="row">
-      
-            <div class="col-md-1"></div>
-    
-            <div class="col-md-7 content">
-                
-                <h1>Summary: Latitude vs. Various Climate Factors</h1>
-                <hr>
-                <article>
-                    <img src="https://github.com/JustinBieberLake/python-api-challenge/blob/main/Starter_Code/output_data/Fig1.png?raw=true" alt="Tempurature Map" class="big_img" width=50% style="float: left">
-                    <br>
-                    <p>This project was done to show how the weather varies as move we closer to the equator.</p>
-                    <p>This website was created to highlight some of the data used in developing the project 
-                        along with data visualizations showing exactly how the weather varies as we move closer to the equator.</p>
-                </article>
-            </div>
+    <div class="container">
+        <div class="row">
+          
+          <div class="col-md-10">
+            <br><div class="jumbotron">
+              <h1 class="display-4">Latitude vs Weather</h1>
+            
+                <p>This project was done to show how the weather varies as move we closer to the equator.  
+                    Using a variety of tools such as MatPlotLib, Openweather API, and our trusty VS Code editor we were able to create 
+                    a list of over 500 cities to compare various weather conditions.</p>
+                <p>This website was created to highlight some of the data used in developing the project 
+                  along with data visualizations showing exactly how the weather varies as we move closer to the equator 
+                  with comparisons for temperature, humidity, cloudiness, and windspeed.</p>
 
-            <div class="col-md-3 content">
-                <h1>Visualizations</h1>
-                <article>
-                <hr>
-                    <a href="temp.html">
-                        <img src="https://github.com/JustinBieberLake/python-api-challenge/blob/main/Starter_Code/output_data/Fig1.png?raw=true" alt="Tempurature Graph" class="small_img">
-                    </a>
-                    <a href="humidity.html">
-                        <img src="https://github.com/JustinBieberLake/python-api-challenge/blob/main/Starter_Code/output_data/Fig2.png?raw=true" alt="Humidity Graph" class="small_img">
-                    </a>
-                    <a href="cloudiness.html">
-                        <img src="https://github.com/JustinBieberLake/python-api-challenge/blob/main/Starter_Code/output_data/Fig3.png?raw=true" alt="Cloudiness Graph" class="small_img">
-                    </a>
-                    <a href="wind.html">
-                        <img src="https://github.com/JustinBieberLake/python-api-challenge/blob/main/Starter_Code/output_data/Fig4.png?raw=true" alt="WindSpeed Graph" class="small_img">
-                    </a>
-                </article>
+                  <a href="visualizations/temp.html">
+                    <button type="button" class="btn btn-default">
+                      <img src="assets/images/Temperature.png" width="80%" />
+                    </button></a>
+            </div>
+          </div>
+
+          
+            <div class="col-md-2">
+                <br><a href="visualizations/temp.html">
+                  <button type="button" class="btn btn-default">
+                    <img src="assets/images/Temperature.png" width="250%" />
+                  </button></a>
+                <a href="visualizations/humidity.html">
+                  <button class="btn btn-default">
+                    <img src="assets/images/Humidity.png" width="250%" />
+                  </button></a>
+                <a href="visualizations/cloudiness.html">
+                  <button class="btn btn-default">
+                    <img src="assets/images/Cloudiness.png" width="250%" />
+                  </button>
+                <a href="visualizations/Windspeed.html">
+                  <button class="btn btn-default">
+                    <img src="assets/images/Windspeed.png" width="250%" />
+                  </button>
+              </div>
             </div>
             <div class="col-md-1"></div>
         </div>
-          <!-- End of the Visualizations imageNav Area -->
     <!-- End of container -->
 
     <!-- jQuery CDN -->
